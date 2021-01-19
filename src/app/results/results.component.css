@@ -1,0 +1,32 @@
+.card-container{
+    max-width: 400px;
+    background-size: cover;
+    margin: 20px;
+}
+mat-card{
+    background-color: rgb(246, 248, 236);
+}
+.person-name{
+    font-size: large;
+}
+.phone-number{
+    font-size: medium;
+    text-align: left;
+}
+.location{
+    text-align: left;
+}
+.email{
+    font-size: medium;
+}
+.blood-group{
+    background-size: unset;
+    font-size: medium;
+    text-align: right;
+}
+.bloodGroup{
+    text-align: right;
+}
+.container{
+    padding-bottom:3%;
+}

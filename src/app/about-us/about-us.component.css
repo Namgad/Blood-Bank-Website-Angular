@@ -1,0 +1,19 @@
+.row{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 13.5%;
+}
+#imageAngad{
+    background-image: url(../../assets/images/IMG_20190919_195232_329.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+.col-xl{
+    height: 100%;
+}
+.container{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}

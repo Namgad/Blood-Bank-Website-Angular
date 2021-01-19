@@ -1,0 +1,10 @@
+.img-container{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5669baa3e0327cf28ebabf21/1449843642633-9AZPHAB0GAN6I5NSO4Q4/ke17ZwdGBToddI8pDm48kK6olKQkDgCv0u0D2DiTxVJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0kD6Ec8Uq9YczfrzwR7e2Mgr-O0h0tXMEAIap1MjsRlH4R4oVJb3GjLaACVaJXlasQ/helping-hand.jpg?format=2500w);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50%;
+}
+h2{
+    text-align: center;
+    position: bottom;
+}

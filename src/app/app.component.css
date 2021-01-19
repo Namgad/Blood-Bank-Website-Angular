@@ -1,0 +1,26 @@
+*{
+    background-color: rgba(236, 231, 231, 0.911);
+}
+
+/* #footer {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+} */
+#header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/* #footer{
+    padding-bottom: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: block;
+} */
+body {
+    margin-bottom:50px;
+}

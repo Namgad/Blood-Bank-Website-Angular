@@ -1,0 +1,94 @@
+<div class="container">
+	<div class="main">
+		<div class="container">
+			<div class="container col-xl-10">
+				<form (submit) = "getAcceptorData(postForm)" #postForm="ngForm">
+		
+					<mat-card>
+				<h3>REGISTER TO REQUEST BLOOD</h3>
+						<div class="row">
+							<div class="name col-xl-6">
+								<mat-form-field>
+									<p>Patient Name</p>
+									<input matInput type = "text" required minlength = "2" #firstname = "ngModel" ngModel name = "firstname"/>
+									<mat-error *ngIf = "firstname.invalid">
+										Name is required
+									</mat-error>
+								</mat-form-field>
+							</div>
+					
+							<div class="Hospital Address">
+								<br>
+								<p>Gender</p>
+								<br>
+								<mat-radio-group aria-label="Select an option" color = "warn" #gender = "ngModel" ngModel name = "gender" required>
+									<mat-radio-button value="Male">Male</mat-radio-button>&nbsp;
+									<mat-radio-button value="Female">Female</mat-radio-button>
+								</mat-radio-group>
+								<mat-error *ngIf = "gender.invalid">
+									Please Select Gender
+								</mat-error>
+							</div>
+						</div>
+				
+						<div class="row">
+							 <div class="name col-xl-6">
+								<p>Blood Group</p>
+								<mat-form-field>
+									<mat-label>Blood Group</mat-label>
+									<mat-select #bloodGroup = "ngModel" ngModel name = "bloodGroup" required>
+										<mat-option value="A+">A+</mat-option>
+										<mat-option value="A-">A-</mat-option>
+										<mat-option value="B+">B+</mat-option>
+										<mat-option value="B-">B-</mat-option>
+										<mat-option value="AB+">AB+</mat-option>
+										<mat-option value="AB-">AB-</mat-option>
+										<mat-option value="O+">O+</mat-option>
+										<mat-option value="O-">O-</mat-option>
+									</mat-select>
+									<mat-error *ngIf = "bloodGroup.invalid">
+										Select Blood Group
+									</mat-error>
+								</mat-form-field>
+						</div>
+							<div class="gender">
+								<mat-form-field>
+									<p>Hospital Address</p>
+									<input matInput type = "text" required minlength = "2" #hospAddr = "ngModel" ngModel name = "hospAddr"/>
+									<mat-error *ngIf = "hospAddr.invalid">
+										Hospital Address is Required
+									</mat-error>
+								</mat-form-field>
+							</div>
+						</div>
+				
+						<div class="row">
+							<div class="number col-xl-6">
+								<mat-form-field>
+									<p>Contact Name</p>
+									<input matInput type = "text" required minlength = "10"  #contactName = "ngModel" ngModel name = "contactName"/>
+									<mat-error *ngIf = "contactName.invalid">
+										Name of contact is required
+									</mat-error>
+								</mat-form-field>
+							</div>
+					
+							<div class="address">
+								<mat-form-field>
+									<p>Contact Number</p>
+									<input matInput type = "text" required minlength = "10" maxlength="10" #phoneNumber = "ngModel" ngModel name = "phoneNumber"/>
+									<mat-error *ngIf = "phoneNumber.invalid">
+										Contact Number is required
+									</mat-error>
+								</mat-form-field>
+							</div>
+						</div>
+						<mat-checkbox color = 'warn' #display = "ngModel" ngModel name = "display" required>I agree to have my contact details broadcasted
+							to the registered donors of this website.</mat-checkbox><br/>
+					  <button mat-raised-button style="background-color: black; color: white;" type="submit">Submit Request</button>
+					</mat-card>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

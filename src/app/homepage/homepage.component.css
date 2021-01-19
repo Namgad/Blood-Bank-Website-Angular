@@ -1,0 +1,26 @@
+.content{
+    background-image: url(../../assets/images/Index.png);
+    background-size: cover;
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+.title{
+    text-align: center;
+}
+.subtitle{
+    text-align: center;
+}
+.donate{
+    background-image: url(../../assets/images/blood.jpg);
+    background-size: cover;
+    padding-top: 145px;
+    padding-bottom: 145px;
+    max-width: 1110px;
+}
+.donateTitle{
+    text-align: center;
+}
+.buttons{
+    background-color: black;
+    color: white;
+}

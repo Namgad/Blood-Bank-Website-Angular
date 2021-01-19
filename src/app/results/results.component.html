@@ -1,0 +1,34 @@
+<div class="container">
+    
+    <h4 style="text-align: center;"><br>Results as per your query:</h4><br>
+    <div class="row col-xl" align="center" *ngFor = "let post of posts"><!-- //for(int i=0 ; i<arr.length ; i++) -->
+        <div class="card-container col-xl-4" *ngIf = "bloodGroup === post.bloodGroup"><!--; else elseBlock-->
+            <mat-card >
+                <mat-card-header>
+                    <mat-card-title class="person-name">
+                        <div class="row">
+                            <div class="name">{{post.name}}</div>
+                            <div class="bloodGroup col-xl">{{post.bloodGroup}}</div>
+                        </div>
+                    </mat-card-title>
+                    <br/>
+                    <mat-card-title>
+                        <div class="phone-number">{{post.contact}}</div>
+                    </mat-card-title>
+                    <br/>
+                    <mat-card-subtitle>
+                        <div class="location">{{post.address}}</div>
+                    </mat-card-subtitle>
+                    <mat-card-content>
+                        
+                    </mat-card-content>
+                </mat-card-header>
+            </mat-card>
+            
+        </div>
+        
+    </div>
+    <!-- <ng-template #elseBlock >
+        <h5>No Results Found</h5>
+    </ng-template> -->
+</div>

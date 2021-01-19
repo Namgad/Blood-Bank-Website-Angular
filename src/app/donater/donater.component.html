@@ -1,0 +1,93 @@
+<div class="container">
+	<div class="container col-xl-10">
+		<form (submit) = "donaterData(postForm)" #postForm="ngForm">
+
+			<mat-card>
+		<h3>Register to Donate Blood</h3>
+				<div class="row">
+					<div class="name col-xl-6">
+						<mat-form-field>
+							<p>Enter Name</p>
+							<input matInput type = "text" required minlength = "2" #firstname = "ngModel" ngModel name = "humanName"/>
+							<mat-error *ngIf = "firstname.invalid">
+								Name of the human is required
+							</mat-error>
+						</mat-form-field>
+					</div>
+			
+					<div class="gender">
+						<br>
+						<p>Gender</p>
+						
+						<mat-radio-group aria-label="Select an option" color = "warn" #gender = "ngModel" ngModel name = "gender" required>
+							<mat-radio-button value="Male">Male</mat-radio-button>&nbsp;
+							<mat-radio-button value="Female">Female</mat-radio-button>
+						</mat-radio-group>
+						<mat-error *ngIf = "gender.invalid">Please Select Gender</mat-error>
+					</div>
+				</div>
+		
+				<div class="row">
+					 <div class="name col-xl-6">
+						
+					<mat-form-field>
+						<mat-label>Blood Group</mat-label>
+						<mat-select #bloodGroup = "ngModel" ngModel name = "bloodGroup" required>
+							<mat-option value="A+">A+</mat-option>
+							<mat-option value="A-">A-</mat-option>
+							<mat-option value="B+">B+</mat-option>
+							<mat-option value="B-">B-</mat-option>
+							<mat-option value="AB+">AB+</mat-option>
+							<mat-option value="AB-">AB-</mat-option>
+							<mat-option value="O+">O+</mat-option>
+							<mat-option value="O-">O-</mat-option>
+						</mat-select>
+						<mat-error *ngIf = "bloodGroup.invalid">
+							Select Blood Group
+						</mat-error>
+					</mat-form-field>
+				</div>
+					<div class="donateReg">
+					<mat-form-field>
+						<mat-label>How often you donate blood?</mat-label>
+						<mat-select #bloodGroup = "ngModel" ngModel name = "bloodReg" required>
+							<mat-option value="Yet to Donate">Yet to Donate</mat-option>
+							<mat-option value="Regular Donor">Regular Donor</mat-option>
+							<mat-option value="On-need Basis">On-need Basis</mat-option>
+						</mat-select>
+					</mat-form-field>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="number col-xl-6">
+						<mat-form-field>
+							<p>Contact Number</p>
+							<input matInput type = "text" numberic required minlength = "10" maxlength="10" #contact = "ngModel" ngModel name = "contactNumber"/>
+							<mat-error *ngIf = "contact.invalid">
+								Contact Number is required!
+							</mat-error>
+							<mat-error *ngIf = "contact.isNan">
+								Please enter valid number!
+							</mat-error>
+						</mat-form-field>
+					</div>
+			
+					<div class="address">
+						<mat-form-field>
+							<p>Address</p>
+							<input matInput type = "text" required minlength = "10" #homeAddress = "ngModel" ngModel name = "homeAddress"/>
+							<mat-error *ngIf = "homeAddress.invalid">
+								Address is required
+							</mat-error>
+						</mat-form-field>
+					</div>
+				</div> <br>
+				<mat-checkbox color = 'warn' #eligibilty = "ngModel" ngModel name = "eligibilty" required>I have read the <a href="https://drive.google.com/file/d/17i1CT-mUSC9bO_5j70VI1WBhcVgOz8bK/view" target="_blank">Eligibilty Criteria</a> and confirm
+				that I am eligible to donate blood</mat-checkbox><br/>
+							
+			  <button mat-raised-button style="background-color: black; color: white;" type="submit" >Register</button>
+			</mat-card>
+		</form>
+	</div>
+</div>

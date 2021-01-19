@@ -1,0 +1,101 @@
+
+
+.acha{
+    padding-top: 250px;
+    padding-left: 40px;
+}
+
+.acha h2{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.acha h1{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.ourservices{
+    padding-top:200px ;
+}
+
+.services{
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.imageset{
+    margin: 42px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.row p{
+    color: #6c757d;
+}
+
+.PORTFOLIO{
+    height: 1100px;
+    width: 100%;
+    padding: 100px 0px 50px;
+}
+
+.kiki{
+    margin-top: 40px;
+;
+}
+
+.Amaze{
+    padding-top:200px ;
+    height: 700px;
+}
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+
+    .ourservices{
+        padding-top:200px ;
+        height: 1200px;
+    }
+    .PORTFOLIO{
+        height: 2500px;
+        width: 100%;
+        padding: 100px 0px 50px;
+    }
+    .Amaze{
+        padding-top:200px ;
+        height: 1350px;
+    }
+}
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+    .img_god{
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .head_god{
+        font-size: small;
+    }
+
+    .para_god{
+        display: none;
+    }
+
+}
+
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+}
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*// Extra large devices (large desktops)*/
+/*// No media query since the extra-large breakpoint has no upper bound on its width*/

@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+    text-align: center;
+    font-size: small;
+    color: white;
+}
+.container-fluid{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    background-color: #000000;
+}
+.footerClass{
+    background-color: #000000;
+}
