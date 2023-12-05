@@ -24,7 +24,7 @@
     "@angular/router": "~8.2.14",
     "bootstrap": "^4.4.1",
     "hammerjs": "^2.0.8",
-    "mongoose": "^5.9.1",
+    "mongoose": "^5.13.20",
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.2",
     "rxjs": "~6.4.0",
